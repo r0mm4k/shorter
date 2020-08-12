@@ -6,7 +6,7 @@ const colors = require('colors');
 const errorHandler = require('./middleware/error');
 
 // Load env vars
-dotenv.config({path: './config/config.env'});
+dotenv.config({path: './config/.env'});
 
 // Connect to database
 connectDB();
