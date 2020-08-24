@@ -13,6 +13,7 @@ connectDB();
 
 // Route files
 const links = require('./routes/links');
+const redirect = require('./routes/redirect');
 
 const app = express();
 
@@ -26,6 +27,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // Mount routers
 app.use('/api/v1/links', links);
+app.use('/', redirect);
 
 app.use(errorHandler);
 

@@ -1,5 +1,6 @@
 const ErrorResponse = require('../utils/error-response');
 const asyncHandler = require('../middleware/async');
+
 const Link = require('../models/Link');
 
 // @desc			Get all links
